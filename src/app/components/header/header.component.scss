@@ -1,0 +1,66 @@
+@import '../../../variables.scss';
+
+.navbar-header {
+    padding: 1em 0;
+    color: $header-nav-color;
+    background-color: $brand-primary;
+    box-shadow: $box-shadow;
+}
+
+.header-title {
+    font-size: 20px;
+}
+
+.header-nav-items a:hover {
+    color: $brand-white;
+}
+
+.header-nav-items a:first-child {
+    padding-left: 0;
+}
+
+.header-nav-items a:last-child {
+    padding-right: 0;
+}
+
+/*
+    Mobile Styles
+*/
+
+/*
+    Desktop
+*/
+
+@media screen and (min-width: 770px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+    .navigation-component {
+        display: block;
+    }
+}
+
+/*
+    Mobile
+*/
+
+@media screen and (max-width: 769px) {
+    .mobile-menu-toggle {
+        display: inline-block;
+    }
+    .navigation-component {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .flex-inner {
+        flex: auto;
+    } 
+}
+
+@media screen and (max-width: 180px) {
+    .header-right {
+        text-align: center;
+    }
+}

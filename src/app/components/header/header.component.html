@@ -1,0 +1,24 @@
+<nav class="navbar-header">
+    <div class="container">
+        <div class="header-nav-items">
+            <div class="flex-outer flex-vertical-center">
+                <div class="flex-inner pointer header-links">
+                    <span class="brand-icon">
+                        <a routerLink="/">
+                            <i class="fas fa-rocket fa-lg"></i>                          
+                        </a>
+                    </span>
+                    <a class="header-title" routerLink="/">App Title</a>
+                </div>
+                <div class="flex-inner t-align-r pointer header-right">
+                    <div>
+                        <app-navlinks class="navigation-component"></app-navlinks>
+                        <button class="mobile-menu-toggle" mat-icon-button (click)="toggleRightSidenav()">
+                            <mat-icon>menu</mat-icon>
+                        </button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+</nav>

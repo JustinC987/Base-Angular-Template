@@ -1,0 +1,13 @@
+@import '../../../variables.scss';
+
+@media screen and (max-width: 769px) {
+    a {
+        display: block;
+        color: $brand-white;
+        padding: 0.5em 2em;
+    }
+
+    a:first-child {
+        padding-left: 2em;
+    }
+}

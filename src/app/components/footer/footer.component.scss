@@ -1,0 +1,21 @@
+@import './../../../variables.scss';
+
+.footer {
+    padding: 1em 0;
+    background-color: $brand-primary;
+    color: $brand-white;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul>li {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .flex-outer {
+        flex-direction: column;
+    }
+}

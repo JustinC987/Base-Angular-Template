@@ -1,0 +1,23 @@
+<div class="app-body">
+
+    <app-header></app-header>
+
+    <div class="app-content">
+        <mat-sidenav-container class='app-content-wrapper'>
+            <mat-sidenav class='mobile-sidenav' #sidenav mode="side" position="end">
+                <app-navlinks></app-navlinks>
+            </mat-sidenav>
+
+            <mat-sidenav-content class="content-body-wrapper" (click)="closeSidenav()">
+                <div class="body-container sidenav-backdrop">
+                    <router-outlet></router-outlet>
+                </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
+
+    <div class="footer-wrapper">
+        <app-footer></app-footer>
+    </div>
+</div>
+

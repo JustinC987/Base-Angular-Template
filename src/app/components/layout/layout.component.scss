@@ -1,0 +1,44 @@
+@import '../../../variables.scss';
+
+/*
+    Stick Footer to bottom
+*/
+
+.app-body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.app-content {
+    flex: 1 0 auto;
+}
+
+// If body content is not greater then view height, the side nav will not cover entire content body height
+// Adding padding ensures sidenav will always take up entire content body height
+.app-content-wrapper, 
+.content-body-wrapper{
+    padding-bottom: 78px;
+}
+
+/*
+    SideNac for mobile menu
+*/
+
+.mat-sidenav-conatiner {
+    height: 90vh;
+}
+
+.mat-drawer-container {
+    background-color: unset;
+}
+
+.mobile-sidenav {
+    background-color: $brand-black;
+}
+
+@media screen and (min-width: 770px) {
+    .mobile-sidenav {
+        display: none;
+    }
+}
